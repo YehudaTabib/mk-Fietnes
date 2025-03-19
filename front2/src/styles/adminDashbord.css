@@ -1,0 +1,263 @@
+.admin-dashboard {
+    min-height: 100vh;
+    background-color: #f8fafc;
+    padding: 2rem;
+}
+
+/* Admin Welcome */
+.admin-welcome {
+    max-width: 1200px;
+    margin: 0 auto 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-welcome h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.admin-welcome h2 {
+    font-size: 1.25rem;
+    color: #64748b;
+}
+
+/* Admin Container */
+.admin-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl;
+}
+
+/* Admin Card */
+.admin-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+}
+
+/* Admin Header */
+.admin-header {
+    margin-bottom: 2rem;
+}
+
+.admin-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+/* Search Input */
+.search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Users List */
+.users-list {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 2rem;
+}
+
+/* List Header */
+.list-header {
+    background-color: #f8fafc;
+    padding: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 1fr 1.5fr;
+    gap: 1rem;
+    font-weight: bold;
+}
+
+/* List Item */
+.list-item {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 2fr 1fr 1.5fr;
+    gap: 1rem;
+    border-bottom: 1px solid #e2e8f0;
+    align-items: center;
+}
+
+/* Last Item */
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* Status */
+.status {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.status-pending {
+    color: #eab308;
+}
+
+.status-active {
+    color: #22c55e;
+}
+
+.status-rejected {
+    color: #ef4444;
+}
+
+/* Actions */
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+/* Buttons */
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Approve Button */
+.approve-button {
+    background-color: #f0fdf4;
+    border-color: #22c55e;
+    color: #22c55e;
+}
+
+.approve-button:hover:not(:disabled) {
+    background-color: #dcfce7;
+}
+
+/* Reject Button */
+.reject-button {
+    background-color: #fef2f2;
+    border-color: #ef4444;
+    color: #ef4444;
+}
+
+.reject-button:hover:not(:disabled) {
+    background-color: #fee2e2;
+}
+
+/* Empty Message */
+.empty-message {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+}
+
+/* Logout Button */
+.logout-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #e04444;
+}
+
+.logout-button:focus {
+    outline: none;
+}
+
+.logout-button svg {
+    vertical-align: middle;
+}
+
+/* Error Message */
+.error-message {
+    color: red;
+    font-size: 16px;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* Responsive Styles */
+
+/* For Tablets (max-width: 900px) */
+@media (max-width: 900px) {
+    .list-header {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .list-item {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+}
+
+/* For Phones (max-width: 600px) */
+@media (max-width: 600px) {
+    .admin-container {
+        padding: 0.5rem;
+    }
+
+    .admin-dashboard {
+        padding: 1rem;
+    }
+
+    .admin-welcome h1 {
+        font-size: 1.5rem;
+    }
+
+    .admin-welcome h2 {
+        font-size: 1rem;
+    }
+
+    .admin-title {
+        font-size: 20px;
+    }
+
+    .search-input {
+        max-width: 100%;
+    }
+
+    .list-header {
+        grid-template-columns: 1fr;
+    }
+
+    .list-item {
+        grid-template-columns: 1fr;
+    }
+
+    .button {
+        padding: 0.3rem 0.7rem;
+    }
+}
+
+
+
+  
